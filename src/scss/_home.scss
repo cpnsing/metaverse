@@ -1,0 +1,249 @@
+
+nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    margin: 0 15px;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+  a {
+    font-size: 1em;
+    text-decoration: none;
+    .active {
+      color: tomato;
+    }
+  }
+  a.active {
+    color: #222;
+  }
+}
+
+
+.footerHome {
+  background-color: #000;
+}
+.text-center {
+  text-align: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.navigation {
+  p {
+    margin: 0 5px;
+    font-size: 15px;
+    padding: 7px 12px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+  }
+  .loginButton {
+    background-color: #00e0b0;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 4px;
+  }
+}
+
+.deskmenu p {
+  margin: 0 1px !important;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  // margin-right: 20px;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  // line-height: 80px;
+  margin: 5px 0px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  // background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #000;
+  height: 65px;
+}
+.sectionPadding {
+  padding: 70px 0;
+}
+
+@media (max-width: 858px) {
+  .sectionPadding {
+    padding: 40px 0;
+  }
+
+
+  .navigation .loginButton {
+    background-color: #f8fbfa;
+    color: #00e0b0;
+    padding: 4px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 134px;
+  }
+  .navbar {
+    position: relative;
+    z-index: 999;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  .navbar ul {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: auto;
+    background: #000;
+    display: block !important;
+    margin: 0 !important;
+    left: -108%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 35px 0 !important;
+    -webkit-box-shadow: 0 11px 24px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 11px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 11px 24px rgba(0, 0, 0, 0.15);
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0 10px 5px;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 10px;
+    z-index: 99;
+    height: 100vh !important;
+    width: "100%";
+  }
+  .navigation p {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    align-items: flex-start;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    justify-content: flex-start;
+    padding: 8px 10px;
+  }
+  
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  nav ul {
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    /* padding: 20px 0px; */
+    // background: #000;
+    align-items: flex-start;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    /* padding: 20px 0px; */
+    background: #000;
+    align-items: flex-start;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  nav ul {
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .textcopy {
+    width: calc(100% - 5px);
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+  }
+}
+
+#loading {
+  animation: rotation 2s infinite linear;
+}
+
